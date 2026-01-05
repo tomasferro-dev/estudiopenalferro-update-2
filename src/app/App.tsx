@@ -284,7 +284,7 @@ export default function App() {
 
               {/* Email */}
               <a
-                href="mailto:contacto@penalferro.com.ar"
+                href="mailto:estudioabogferro@gmail.com"
                 className="bg-[#1A1918] p-8 text-center hover:bg-[#C4A259]/10 border border-[#3D3C38] hover:border-[#C4A259] transition-all duration-300 group"
               >
                 <div className="w-14 h-14 bg-[#C4A259]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#C4A259] transition-all">
@@ -294,7 +294,10 @@ export default function App() {
                   Email
                 </h3>
                 <p className="text-[#D4CDB8] text-base break-all">
-                  contacto@penalferro.com.ar
+                  estudioabogferro
+                </p>
+                <p className="text-[#D4CDB8] text-base break-all" >
+                  @gmail.com
                 </p>
               </a>
 
