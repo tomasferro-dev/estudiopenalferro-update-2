@@ -3,6 +3,7 @@ import { Menu, X, Phone, Mail, MapPin, ChevronRight, ChevronDown, ShieldCheck, S
 // import heroImage from "figma:asset/5bc8747ff68c28cfe4e516a61a7285fe39405632.png";
 import heroImage from "../assets/images/fondo2.jpg";
 import aboutImage from "../assets/images/josefina3.jpg";
+import CopyButton from './components/ui/CoppyButton';
 
 
 export default function App() {
@@ -282,7 +283,27 @@ export default function App() {
                 <p className="text-[#D4CDB8] text-base">
                   +54 9 261 612 3456
                 </p>
+                
+                <div className="h-6" aria-hidden="true" />
+                <section style={{ marginTop: 24 }}>
+                  <pre
+                    style={{
+                      maxWidth: 680,
+                      maxHeight: 220,
+                      overflow: "auto",
+                      background: "#11182710",
+                      padding: 12,
+                      borderRadius: 8,
+                    }}
+                  >
+                  </pre>
+                  <CopyButton
+                    text={`+5492616123456`}
+                    label="Copiar Teléfono"
+                  />
+                </section>
               </a>
+
 
               {/* Email */}
               <a
@@ -299,30 +320,65 @@ export default function App() {
                   estudioabogferro
                 </p>
                 <p className="text-[#D4CDB8] text-base break-all" >
-                  @gmail.com
+                  @gmail.com  
                 </p>
+
+                <section style={{ marginTop: 24 }}>
+                  <pre
+                    style={{
+                      maxWidth: 680,
+                      maxHeight: 220,
+                      overflow: "auto",
+                      background: "#11182710",
+                      padding: 12,
+                      borderRadius: 8,
+                    }}
+                  >
+                  </pre>
+                  <CopyButton
+                    text={`estudioabogferro@gmail.com`}
+                    label="Copiar Correo"
+                  />
+                </section>
               </a>
+
 
               {/* Location */}
               <div className="bg-[#1A1918] p-8 text-center border border-[#3D3C38]">
                 <div className="w-14 h-14 bg-[#C4A259]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="text-[#C4A259]" size={24} />
                 </div>
-                {/* <iframe id="map-canvas" class="map_part" width="210"  height="200"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. Bartolomé Mitre 565, M5500 Mendoza&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-
-                </iframe> */}
                 <h3 className="text-sm font-semibold tracking-[0.08em] uppercase text-[#C4A259] mb-2">
                   Ubicación
                 </h3>
                 <p className="text-[#D4CDB8] text-base">
                   Mendoza, Argentina
                 </p>
+                <div className="h-6" aria-hidden="true" />
+
+                <section style={{ marginTop: 24 }}>
+        <pre
+          style={{
+            maxWidth: 680,
+            maxHeight: 220,
+            overflow: "auto",
+            background: "#11182710",
+            padding: 12,
+            borderRadius: 8,
+          }}
+        >
+        </pre>
+        <CopyButton
+          text={`Av. Bartolomé Mitre 565
+                Planta baja, oficina 16
+                Ciudad de Mendoza, Mendoza, Argentina`}
+          label="Copiar Dirección"
+        />
+      </section>
               </div>
+              
             </div>
 
-{/* <iframe id="map-canvas" class="map_part" width="250"  height="200"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. Bartolomé Mitre 565, M5500 Mendoza&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-
-</iframe> */}
             {/* CTA Button */}
             <div className="text-center mt-12">
               
@@ -332,17 +388,13 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#C4A259] text-[#1A1918] px-8 py-4 text-sm font-semibold tracking-[0.08em] uppercase hover:bg-[#D4B36A] transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                
                 Consultar por WhatsApp
                 <ChevronRight size={18} />
               </a>
             </div>
             <div className="text-center mt-12">
-              <p
-                className="inline-flex items-center gap-2 bg-[#C4A259] text-[#1A1918] px-8 py-4 text-sm font-semibold tracking-[0.08em] uppercase hover:bg-[#D4B36A] transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Encontranos en
-                <ChevronDown size={18} />
+              <p className="text-[#D4CDB8] text-base break-all">
+                Encontranos en:
               </p>
             </div>
             <div className="text-center mt-4">
