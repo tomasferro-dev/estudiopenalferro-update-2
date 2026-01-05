@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Menu, X, Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, ChevronRight, ChevronDown, ShieldCheck, Scale, Binary } from 'lucide-react';
 // import heroImage from "figma:asset/5bc8747ff68c28cfe4e516a61a7285fe39405632.png";
-import aboutImage from "../assets/images/josefina4-cuadrado.jpg";
+import heroImage from "../assets/images/fondo2.jpg";
+import aboutImage from "../assets/images/josefina3.jpg";
 
 
 export default function App() {
@@ -107,7 +108,7 @@ export default function App() {
           id="bienvenido"
           className="relative min-h-screen flex items-center justify-center"
           style={{
-            // backgroundImage: `linear-gradient(rgba(26, 25, 24, 0.7), rgba(26, 25, 24, 0.7)), url(${heroImage})`,
+            backgroundImage: `linear-gradient(rgba(26, 25, 24, 0.7), rgba(26, 25, 24, 0.7)), url(${heroImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -198,7 +199,7 @@ export default function App() {
               <div className="bg-[#B8A67D] p-8 lg:p-10 hover:bg-[#C4A259] transition-all duration-300 group">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#1A1918] flex items-center justify-center flex-shrink-0">
-                    <div className="w-6 h-6 border-2 border-[#C4A259]"></div>
+                    <ShieldCheck className="text-[#C4A259] " size={24} />
                   </div>
                   <h3 className="text-xl md:text-2xl font-serif font-medium text-[#1A1918] tracking-wide">
                     Defensa particular en causas penales
@@ -215,7 +216,7 @@ export default function App() {
               <div className="bg-[#B8A67D] p-8 lg:p-10 hover:bg-[#C4A259] transition-all duration-300 group">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#1A1918] flex items-center justify-center flex-shrink-0">
-                    <div className="w-6 h-6 border-2 border-[#C4A259]"></div>
+                    <Scale className="text-[#C4A259] " size={24} />
                   </div>
                   <h3 className="text-xl md:text-2xl font-serif font-medium text-[#1A1918] tracking-wide">
                     Litigación penal en sistema adversarial
@@ -232,7 +233,8 @@ export default function App() {
               <div className="bg-[#B8A67D] p-8 lg:p-10 hover:bg-[#C4A259] transition-all duration-300 group md:col-span-2">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#1A1918] flex items-center justify-center flex-shrink-0">
-                    <div className="w-6 h-6 border-2 border-[#C4A259]"></div>
+                    {/* <div className="w-6 h-6 border-2 border-[#C4A259]"></div> */}
+                    <Binary className="text-[#C4A259] " size={24} />
                   </div>
                   <h3 className="text-xl md:text-2xl font-serif font-medium text-[#1A1918] tracking-wide">
                     Cyberdelito
@@ -306,6 +308,9 @@ export default function App() {
                 <div className="w-14 h-14 bg-[#C4A259]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="text-[#C4A259]" size={24} />
                 </div>
+                {/* <iframe id="map-canvas" class="map_part" width="210"  height="200"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. Bartolomé Mitre 565, M5500 Mendoza&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+                </iframe> */}
                 <h3 className="text-sm font-semibold tracking-[0.08em] uppercase text-[#C4A259] mb-2">
                   Ubicación
                 </h3>
@@ -315,16 +320,39 @@ export default function App() {
               </div>
             </div>
 
+{/* <iframe id="map-canvas" class="map_part" width="250"  height="200"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. Bartolomé Mitre 565, M5500 Mendoza&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+</iframe> */}
             {/* CTA Button */}
             <div className="text-center mt-12">
+              
               <a
                 href="https://wa.me/2616589732"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#C4A259] text-[#1A1918] px-8 py-4 text-sm font-semibold tracking-[0.08em] uppercase hover:bg-[#D4B36A] transition-all duration-300 shadow-lg hover:shadow-xl"
               >
+                
                 Consultar por WhatsApp
                 <ChevronRight size={18} />
+              </a>
+            </div>
+            <div className="text-center mt-12">
+              <p
+                className="inline-flex items-center gap-2 bg-[#C4A259] text-[#1A1918] px-8 py-4 text-sm font-semibold tracking-[0.08em] uppercase hover:bg-[#D4B36A] transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Encontranos en
+                <ChevronDown size={18} />
+              </p>
+            </div>
+            <div className="text-center mt-4">
+              
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2  text-[#1A1918] px-8 py-4 text-sm font-semibold tracking-[0.08em] uppercase  transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                 <iframe id="map-canvas" class="map_part" width="350"  height="250"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. Bartolomé Mitre 565, M5500 Mendoza&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
               </a>
             </div>
           </div>
