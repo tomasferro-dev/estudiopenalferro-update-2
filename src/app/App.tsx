@@ -116,7 +116,7 @@ export default function App() {
         >
           <div className="max-w-5xl mx-auto px-6 lg:px-12 py-20 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light tracking-wide text-white mb-8 leading-tight">
-              Estudio Jurídico Penal Ferro y Asoc.
+              Estudio Jurídico Penal <hr></hr> Ferro y Asoc.
             </h1>
             <div className="w-24 h-[2px] bg-[#C4A259] mx-auto mb-8"></div>
             <p className="text-lg md:text-xl text-[#D4CDB8] max-w-3xl mx-auto mb-12 leading-relaxed">
@@ -270,9 +270,10 @@ export default function App() {
 
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {/* Phone */}
-              <a
+              <div                 className="bg-[#1A1918] p-8 text-center hover:bg-[#C4A259]/10 border border-[#3D3C38] hover:border-[#C4A259] transition-all duration-300 group"
+>
+                <a
                 href="tel:+5492616123456"
-                className="bg-[#1A1918] p-8 text-center hover:bg-[#C4A259]/10 border border-[#3D3C38] hover:border-[#C4A259] transition-all duration-300 group"
               >
                 <div className="w-14 h-14 bg-[#C4A259]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#C4A259] transition-all">
                   <Phone className="text-[#C4A259] group-hover:text-[#1A1918]" size={24} />
@@ -281,10 +282,12 @@ export default function App() {
                   Teléfono
                 </h3>
                 <p className="text-[#D4CDB8] text-base">
-                  +54 9 261 612 3456
+                  +54 9 261 658 9732
                 </p>
                 
                 <div className="h-6" aria-hidden="true" />
+                
+                </a>
                 <section style={{ marginTop: 24 }}>
                   <pre
                     style={{
@@ -302,13 +305,15 @@ export default function App() {
                     label="Copiar Teléfono"
                   />
                 </section>
-              </a>
+              </div>
 
 
               {/* Email */}
+              <div
+                className="bg-[#1A1918] p-8 text-center hover:bg-[#C4A259]/10 border border-[#3D3C38] hover:border-[#C4A259] transition-all duration-300 group"
+              >
               <a
                 href="mailto:estudioabogferro@gmail.com"
-                className="bg-[#1A1918] p-8 text-center hover:bg-[#C4A259]/10 border border-[#3D3C38] hover:border-[#C4A259] transition-all duration-300 group"
               >
                 <div className="w-14 h-14 bg-[#C4A259]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#C4A259] transition-all">
                   <Mail className="text-[#C4A259] group-hover:text-[#1A1918]" size={24} />
@@ -322,6 +327,7 @@ export default function App() {
                 <p className="text-[#D4CDB8] text-base break-all" >
                   @gmail.com  
                 </p>
+              </a>
 
                 <section style={{ marginTop: 24 }}>
                   <pre
@@ -340,7 +346,8 @@ export default function App() {
                     label="Copiar Correo"
                   />
                 </section>
-              </a>
+
+              </div>
 
 
               {/* Location */}
@@ -396,7 +403,10 @@ export default function App() {
               <p className="text-[#D4CDB8] text-base break-all">
                 Encontranos en:
               </p>
+              
             </div>
+                        <div className="w-12 h-[2px] bg-[#C4A259] mx-auto mb-2 mt-2"></div>
+
             <div className="text-center mt-4">
               
               <a
