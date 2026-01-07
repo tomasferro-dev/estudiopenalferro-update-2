@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Menu, X, Phone, Mail, MapPin, ChevronRight, ChevronDown, ShieldCheck, Scale, Binary } from 'lucide-react';
 // import heroImage from "figma:asset/5bc8747ff68c28cfe4e516a61a7285fe39405632.png";
 import heroImage from "../assets/images/fondo2.jpg";
-import aboutImage from "../assets/images/josefina3.jpg";
+import aboutImage from "../assets/images/josefina-recreado.png";
 import CopyButton from './components/ui/CoppyButton';
 
 
@@ -381,10 +381,9 @@ export default function App() {
                 Ciudad de Mendoza, Mendoza, Argentina`}
           label="Copiar Dirección"
         />
-      </section>
-              </div>
-              
-            </div>
+          </section>
+        </div>
+      </div>
 
             {/* CTA Button */}
             <div className="text-center mt-12">
@@ -405,20 +404,42 @@ export default function App() {
               </p>
               
             </div>
-                        <div className="w-12 h-[2px] bg-[#C4A259] mx-auto mb-2 mt-2"></div>
-
-            <div className="text-center mt-4">
+              <div className="w-12 h-[2px] bg-[#C4A259] mx-auto mb-2 mt-2"></div>
               
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2  text-[#1A1918] px-8 py-4 text-sm font-semibold tracking-[0.08em] uppercase  transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                 <iframe id="map-canvas" class="map_part" width="350"  height="250"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. Bartolomé Mitre 565, M5500 Mendoza&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
-              </a>
+<div className="text-center mt-4 px-4">
+  <div
+    className="
+      mx-auto
+      flex items-center justify-center
+      text-[#1A1918]
+      py-4
+      text-sm font-semibold tracking-[0.08em] uppercase
+      transition-all duration-300 shadow-lg hover:shadow-xl
+      w-full
+      max-w-full
+      lg:max-w-4xl
+      xl:max-w-5xl
+      overflow-hidden
+    "
+  >
+    <iframe
+      id="map-canvas"
+      className="
+        w-full
+        h-[260px] sm:h-[300px] md:w-[700px]
+        rounded-md
+      "
+      frameBorder="0"
+      scrolling="no"
+      src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Av.%20Bartolomé%20Mitre%20565,%20Mendoza&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+   
+>
+
+                  </iframe>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
         {/* Footer */}
         <footer className="bg-[#1A1918] border-t border-[#3D3C38] py-8">
