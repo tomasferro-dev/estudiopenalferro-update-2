@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Menu, X, Phone, Mail, MapPin, ChevronRight, ChevronDown, ShieldCheck, Scale, Binary } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, ChevronRight, ShieldCheck, Scale, Binary } from 'lucide-react';
 // import heroImage from "figma:asset/5bc8747ff68c28cfe4e516a61a7285fe39405632.png";
 import heroImage from "../assets/images/fondo2.jpg";
 import aboutImage from "../assets/images/josefina-recreado.png";
 import CopyButton from './components/ui/CoppyButton';
+import { FileUser } from "lucide-react";
 
 
 export default function App() {
@@ -231,10 +232,44 @@ export default function App() {
               </div>
 
               {/* Card 3 */}
-              <div className="bg-[#B8A67D] p-8 lg:p-10 hover:bg-[#C4A259] transition-all duration-300 group md:col-span-2">
+              <div className="bg-[#B8A67D] p-8 lg:p-10 hover:bg-[#C4A259] transition-all duration-300 group">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#1A1918] flex items-center justify-center flex-shrink-0">
-                    {/* <div className="w-6 h-6 border-2 border-[#C4A259]"></div> */}
+                    <Binary className="text-[#C4A259] " size={24} />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-serif font-medium text-[#1A1918] tracking-wide">
+                    Ciberdelitos y criminalidad informática
+                  </h3>
+                </div>
+                <p className="text-[#2B2A27] leading-relaxed text-base">
+                  
+                  Asistencia jurídica en investigaciones y procesos penales vinculados a delitos
+                  informáticos, tales como accesos ilegítimos a sistemas, fraudes digitales
+                  y conductas ilícitas.
+
+                </p>
+              </div>
+
+              {/* Card 4 */}
+              <div className="bg-[#B8A67D] p-8 lg:p-10 hover:bg-[#C4A259] transition-all duration-300 group">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-[#1A1918] flex items-center justify-center flex-shrink-0">
+                    <FileUser  className="text-[#C4A259] " size={24} />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-serif font-medium text-[#1A1918] tracking-wide">
+                    Derecho penal migratorio
+                  </h3>
+                </div>
+                <p className="text-[#2B2A27] leading-relaxed text-base">
+                  Defensa en causas penales vinculadas a la situación migratoria de
+                  personas extranjeras, incluyendo infracciones a la normativa migratoria,
+                  y su articulación con procesos penales en el ámbito provincial.
+                </p>
+              </div>
+              {/* Card 3 */}
+              {/* <div className="bg-[#B8A67D] p-8 lg:p-10 hover:bg-[#C4A259] transition-all duration-300 group md:col-span-2">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-[#1A1918] flex items-center justify-center flex-shrink-0">
                     <Binary className="text-[#C4A259] " size={24} />
                   </div>
                   <h3 className="text-xl md:text-2xl font-serif font-medium text-[#1A1918] tracking-wide">
@@ -246,7 +281,7 @@ export default function App() {
                   de la sociedad, obligan a los operadores jurídicos a prepararse exhaustivamente
                   sobre la normativa aplicable, para lograr defender técnicamente el caso.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
